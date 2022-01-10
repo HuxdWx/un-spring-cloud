@@ -1,8 +1,8 @@
 server:
-  port: 8010
+  port: 8030
 spring:
   application:
-    name: cloud-user-service
+    name: cloud-account-service
   cloud:
     nacos:
       discovery:

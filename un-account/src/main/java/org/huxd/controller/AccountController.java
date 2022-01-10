@@ -2,8 +2,8 @@ package org.huxd.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.huxd.domain.Product;
-import org.huxd.service.ProductService;
+import org.huxd.domain.Account;
+import org.huxd.service.AccountService;
 import org.huxd.vo.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,16 +18,16 @@ import javax.annotation.Resource;
  * @date 2022/1/7 16:21
  */
 @RestController
-@RequestMapping("/user")
-public class OrderController {
+@RequestMapping("/account")
+public class AccountController {
 
     @Resource
-    private ProductService productService;
+    private AccountService accountService;
 
     @GetMapping(value = "/list")
     public Result<?> queryPageList(){
-        Page<Product> page = new Page<Product>(1, 10);
-        IPage<Product> pageList = productService.page(page);
+        Page<Account> page = new Page<Account>(1, 10);
+        IPage<Account> pageList = accountService.page(page);
         return Result.OK(pageList);
     }
 }

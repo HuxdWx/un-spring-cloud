@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>un-user</artifactId>
+    <artifactId>un-account</artifactId>
 
     <dependencies>
         <dependency>
