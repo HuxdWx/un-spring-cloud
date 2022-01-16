@@ -2,13 +2,12 @@ package org.huxd.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-
 import org.huxd.domain.Order;
+import org.huxd.service.OrderService;
+import org.huxd.vo.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.huxd.service.OrderService;
-import org.huxd.vo.Result;
 
 import javax.annotation.Resource;
 
@@ -19,7 +18,7 @@ import javax.annotation.Resource;
  * @date 2022/1/7 16:21
  */
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/account")
 public class OrderController {
 
     @Resource

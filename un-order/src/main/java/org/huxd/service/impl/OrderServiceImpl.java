@@ -3,8 +3,8 @@ package org.huxd.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.huxd.domain.Order;
 import org.huxd.mapper.OrderMapper;
-import org.springframework.stereotype.Service;
 import org.huxd.service.OrderService;
+import org.springframework.stereotype.Service;
 
 /**
  * @author Huxd

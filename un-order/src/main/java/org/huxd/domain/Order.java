@@ -11,17 +11,17 @@ import java.io.Serializable;
  * @author Huxd
  * @version 1.0
  * @description: TODO
- * @date 2022/1/10 13:37
+ * @date 2022/1/11 18:57
  */
 @Data
 @TableName("order")
 public class Order implements Serializable {
     private static final long serialVersionUID = 1L;
-
     @TableId(type = IdType.AUTO)
     private int id;
+    private String orderNo;
+    private String accountCode;
     private String productCode;
-    private String productName;
     private int count;
-    private int price;
+    private String amount;
 }

@@ -7,6 +7,7 @@
         <module>un-user</module>
         <module>un-order</module>
         <module>un-account</module>
+        <module>cloud-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -116,7 +117,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
+ <!--   <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -132,5 +133,5 @@
             </plugin>
         </plugins>
     </build>
-
+-->
 </project>
